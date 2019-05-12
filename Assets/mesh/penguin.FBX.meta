@@ -1,15 +1,67 @@
 fileFormatVersion: 2
-guid: ceae514a397284344a5a9fff5fe7af12
-timeCreated: 1557359048
+guid: 7d3fb04d244fd954a927d76656a9b451
+timeCreated: 1557665522
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: penguin
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 L Calf
+    100008: Bip001 L Clavicle
+    100010: Bip001 L Finger0
+    100012: Bip001 L Foot
+    100014: Bip001 L Forearm
+    100016: Bip001 L Hand
+    100018: Bip001 L Thigh
+    100020: Bip001 L Toe0
+    100022: Bip001 L UpperArm
+    100024: Bip001 Neck
+    100026: Bip001 Pelvis
+    100028: Bip001 R Calf
+    100030: Bip001 R Clavicle
+    100032: Bip001 R Finger0
+    100034: Bip001 R Foot
+    100036: Bip001 R Forearm
+    100038: Bip001 R Hand
+    100040: Bip001 R Thigh
+    100042: Bip001 R Toe0
+    100044: Bip001 R UpperArm
+    100046: Bip001 Spine
+    100048: Bip001 Spine1
+    100050: Group59852
+    100052: //RootNode
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 L Calf
+    400008: Bip001 L Clavicle
+    400010: Bip001 L Finger0
+    400012: Bip001 L Foot
+    400014: Bip001 L Forearm
+    400016: Bip001 L Hand
+    400018: Bip001 L Thigh
+    400020: Bip001 L Toe0
+    400022: Bip001 L UpperArm
+    400024: Bip001 Neck
+    400026: Bip001 Pelvis
+    400028: Bip001 R Calf
+    400030: Bip001 R Clavicle
+    400032: Bip001 R Finger0
+    400034: Bip001 R Foot
+    400036: Bip001 R Forearm
+    400038: Bip001 R Hand
+    400040: Bip001 R Thigh
+    400042: Bip001 R Toe0
+    400044: Bip001 R UpperArm
+    400046: Bip001 Spine
+    400048: Bip001 Spine1
+    400050: Group59852
+    400052: //RootNode
+    4300000: Group59852
+    9500000: //RootNode
+    13700000: Group59852
   materials:
     importMaterials: 1
     materialName: 0
@@ -74,7 +126,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
