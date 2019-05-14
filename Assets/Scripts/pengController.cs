@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum State
+public enum State1
 {
     idle,
     trace,
