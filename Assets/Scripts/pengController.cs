@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-public enum State
+public enum Peng_State
 {
     idle,
     trace,
