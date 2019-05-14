@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/animations/boar/boar_walk.fbm/boar.tga.meta
-guid: de2b9f2c55ba8734c9866f92fd7a8c39
+guid: e9c8171afcb8be641aa07c4b47b2a6a8
 timeCreated: 1557830657
-=======
-guid: 19f3da0f9c1e7414f9590d6bc1028ec4
-timeCreated: 1557830072
->>>>>>> ProjectYHL/seongu:Assets/animations/boar/boar_walk.fbm/boar.tga.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

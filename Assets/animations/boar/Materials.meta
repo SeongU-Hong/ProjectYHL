@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/animations/boar/Materials.meta
+guid: 14fba9af2dfe2db4391d909a4ee7dbff
+folderAsset: yes
+timeCreated: 1557829695
+=======
 guid: a918f1b7016e16448bca75a5e17f6bb0
 folderAsset: yes
 timeCreated: 1557829927
+>>>>>>> ProjectYHL/seongu:Assets/animations/boar/Materials.meta
 licenseType: Free
 DefaultImporter:
   userData: 

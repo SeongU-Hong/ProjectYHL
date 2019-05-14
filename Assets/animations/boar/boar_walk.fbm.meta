@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/animations/boar/boar_walk.fbm.meta
+guid: 2d0b61a2eeb2fd14f8eac019263efe8d
+folderAsset: yes
+timeCreated: 1557830652
+=======
 guid: 293bb135470a67241bc88fe55b68f06b
 folderAsset: yes
 timeCreated: 1557830068
+>>>>>>> ProjectYHL/seongu:Assets/animations/boar/boar_walk.fbm.meta
 licenseType: Free
 DefaultImporter:
   userData: 
