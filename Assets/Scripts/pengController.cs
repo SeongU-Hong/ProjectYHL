@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
+public enum State
+{
+    idle,
+    trace,
+    attacked,
+    die
+}
+
+
 public class pengController : MonoBehaviour {
     NavMeshAgent agent;
     Transform endTr;
