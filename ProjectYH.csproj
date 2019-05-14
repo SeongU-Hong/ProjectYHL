@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\JoyStick.cs" />
     <Compile Include="Assets\Scripts\MainCam.cs" />
     <Compile Include="Assets\Scripts\MonsterController.cs" />
+    <Compile Include="Assets\Scripts\pengController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
