@@ -23,7 +23,11 @@ MonoBehaviour:
   m_RootView: {fileID: 11}
 =======
   m_RootView: {fileID: 7}
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
@@ -159,7 +163,11 @@ MonoBehaviour:
   vertical: 0
   controlID: 74
 --- !u!114 &5
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -243,7 +251,11 @@ MonoBehaviour:
   vertical: 0
   controlID: 73
 --- !u!114 &6
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -271,7 +283,11 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_Panes:
   - {fileID: 20}
   - {fileID: 16}
@@ -302,7 +318,11 @@ MonoBehaviour:
 =======
     width: 1904
     height: 981
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &12
@@ -370,7 +390,11 @@ MonoBehaviour:
   m_ActualView: {fileID: 22}
 =======
   m_ActualView: {fileID: 16}
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_Panes:
   - {fileID: 22}
   - {fileID: 18}
@@ -437,7 +461,11 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &11
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -474,7 +502,11 @@ MonoBehaviour:
 =======
     m_KeySerializationHelper: []
     m_ValueSerializationHelper: []
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 0}
   m_BreadCrumbs: []
@@ -564,7 +596,11 @@ MonoBehaviour:
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/mesh
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity\SCIT_Project\ProjectYHL
   m_IsLocked: 0
@@ -578,7 +614,11 @@ MonoBehaviour:
     m_SelectedIDs: 18270000
     m_LastClickedID: 10008
     m_ExpandedIDs: 00000000d82400004c25000078250000c2250000042600007026000074260000b82600000e27000032270000ba27000036280000742a0000762a0000782a00007a2a00007c2a00007e2a0000802a0000822a0000842a0000862a0000882a00008a2a00008c2a00008e2a0000902a0000922a0000942a0000962a0000982a00009a2a00009c2a00009e2a0000a02a0000a22a0000a42a0000
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -610,7 +650,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000da2400004e2500007a250000bc250000582600005c260000a62600000027000026270000b02700001a2800007a2a00007c2a00007e2a0000802a0000822a0000842a0000862a0000882a00008a2a00008c2a00008e2a0000902a0000922a0000942a0000962a0000982a00009a2a00009c2a00009e2a0000a02a0000a22a0000a42a0000a62a0000a82a0000
 =======
     m_ExpandedIDs: 00000000d82400004c25000078250000c2250000042600007026000074260000b82600000e27000032270000ba27000036280000742a0000762a0000782a00007a2a00007c2a00007e2a0000802a0000822a0000842a0000862a0000882a00008a2a00008c2a00008e2a0000902a0000922a0000942a0000962a0000982a00009a2a00009c2a00009e2a0000a02a0000a22a0000a42a0000c62b0000
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +691,11 @@ MonoBehaviour:
 =======
       m_Name: 
       m_OriginalName: 
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -658,7 +706,11 @@ MonoBehaviour:
       m_UserData: 10018
 =======
       m_UserData: 0
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 11
@@ -679,7 +731,11 @@ MonoBehaviour:
 =======
   m_DirectoriesAreaWidth: 180
 --- !u!114 &14
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -748,7 +804,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: e4fbffff00000000
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -802,7 +862,11 @@ MonoBehaviour:
   lastFramingTime: 718.6978737
 =======
   lastFramingTime: 30.9939523
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
@@ -815,7 +879,11 @@ MonoBehaviour:
     m_Target: {x: 24.302002, y: 5.8484864, z: 11.526279}
     speed: 2
     m_Value: {x: 24.302002, y: 5.8484864, z: 11.526279}
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -854,7 +922,11 @@ MonoBehaviour:
     m_Target: 8.351729
     speed: 2
     m_Value: 8.351729
+<<<<<<< HEAD
 >>>>>>> 4bfef8a6f83c665d8a7996c7f4eb3cc450fdd123
+=======
+>>>>>>> ProjectYHL/seongu
+>>>>>>> master
   m_Ortho:
     m_Target: 0
     speed: 2
