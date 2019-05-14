@@ -18,7 +18,6 @@ public class MonsterController : MonoBehaviour {
     NavMeshAgent nvAgent;
     Transform playerTr;
     Transform monsterTr;
-    Animator anim;
 
     public State state = State.idle;
     public float traceDist = 0.0f;
@@ -33,9 +32,6 @@ public class MonsterController : MonoBehaviour {
         nvAgent = GetComponent<NavMeshAgent>();
         monsterTr = GetComponent<Transform>();
         playerTr = GameObject.FindGameObjectWithTag("penguin").transform;
-
-        anim = GetComponent<Animator>();
-
 
         StartCoroutine(CheckMonsterState());
         StartCoroutine(MonsterAction());
@@ -77,17 +73,12 @@ public class MonsterController : MonoBehaviour {
             {
                 case State.idle:
                     nvAgent.Stop();
-                    anim.SetBool("IsTrace", false);
                     break;
                 case State.trace:
-                    anim.SetBool("IsAttack", false);
                     nvAgent.SetDestination(playerTr.position);
                     nvAgent.Resume();
-                    anim.SetBool("IsTrace", true);
                     break;
                 case State.attack:
-                    anim.SetBool("IsAttack", true);
-                    nvAgent.Stop();
                     break;
                 case State.die:
                     break;
