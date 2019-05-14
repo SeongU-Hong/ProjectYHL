@@ -1,15 +1,85 @@
 fileFormatVersion: 2
-guid: 2e74d16dfcea8ce4e83458d3ac56cfbd
-timeCreated: 1557364025
+guid: 2f325874b3720b14ab7739427062aab8
+timeCreated: 1557815078
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: bear
+    100004: Bip003
+    100006: Bip003 Head
+    100008: Bip003 HeadNub
+    100010: Bip003 L Calf
+    100012: Bip003 L Clavicle
+    100014: Bip003 L Finger0
+    100016: Bip003 L Finger0Nub
+    100018: Bip003 L Foot
+    100020: Bip003 L Forearm
+    100022: Bip003 L Hand
+    100024: Bip003 L Thigh
+    100026: Bip003 L Toe0
+    100028: Bip003 L Toe01
+    100030: Bip003 L Toe02
+    100032: Bip003 L Toe0Nub
+    100034: Bip003 L UpperArm
+    100036: Bip003 Neck
+    100038: Bip003 Pelvis
+    100040: Bip003 R Calf
+    100042: Bip003 R Clavicle
+    100044: Bip003 R Finger0
+    100046: Bip003 R Finger0Nub
+    100048: Bip003 R Foot
+    100050: Bip003 R Forearm
+    100052: Bip003 R Hand
+    100054: Bip003 R Thigh
+    100056: Bip003 R Toe0
+    100058: Bip003 R Toe01
+    100060: Bip003 R Toe02
+    100062: Bip003 R Toe0Nub
+    100064: Bip003 R UpperArm
+    100066: Bip003 Spine
+    100068: Bip003 Spine1
+    100070: Bip003 Spine2
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
+    400002: bear
+    400004: Bip003
+    400006: Bip003 Head
+    400008: Bip003 HeadNub
+    400010: Bip003 L Calf
+    400012: Bip003 L Clavicle
+    400014: Bip003 L Finger0
+    400016: Bip003 L Finger0Nub
+    400018: Bip003 L Foot
+    400020: Bip003 L Forearm
+    400022: Bip003 L Hand
+    400024: Bip003 L Thigh
+    400026: Bip003 L Toe0
+    400028: Bip003 L Toe01
+    400030: Bip003 L Toe02
+    400032: Bip003 L Toe0Nub
+    400034: Bip003 L UpperArm
+    400036: Bip003 Neck
+    400038: Bip003 Pelvis
+    400040: Bip003 R Calf
+    400042: Bip003 R Clavicle
+    400044: Bip003 R Finger0
+    400046: Bip003 R Finger0Nub
+    400048: Bip003 R Foot
+    400050: Bip003 R Forearm
+    400052: Bip003 R Hand
+    400054: Bip003 R Thigh
+    400056: Bip003 R Toe0
+    400058: Bip003 R Toe01
+    400060: Bip003 R Toe02
+    400062: Bip003 R Toe0Nub
+    400064: Bip003 R UpperArm
+    400066: Bip003 Spine
+    400068: Bip003 Spine1
+    400070: Bip003 Spine2
     4300000: bear
+    9500000: //RootNode
+    13700000: bear
   materials:
     importMaterials: 1
     materialName: 0
@@ -74,7 +144,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
