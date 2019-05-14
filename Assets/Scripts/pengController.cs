@@ -4,11 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-<<<<<<< HEAD
 public enum Peng_State
-=======
-public enum State1
->>>>>>> ProjectYHL/seongu
 {
     idle,
     trace,
