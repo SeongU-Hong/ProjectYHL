@@ -7,24 +7,33 @@ public class BearController : MonoBehaviour {
     public float speed=4f;
     public float rotateSpeed=4f;
     Rigidbody bearRigidbody;
-    Vector3 movement;
+    Animator animator;
+    private Vector3 movement;
+    private float h;
+    private float v;
 
     private void Awake()
     {
         bearRigidbody = GetComponent<Rigidbody>();
+        animator = GetComponent < Animator >();
+    }
+
+    private void Update()
+    {
+        h = Input.GetAxisRaw("Horizontal");
+        v = Input.GetAxisRaw("Vertical");
+
+        AnimationUpdate();
     }
 
     private void FixedUpdate()
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-
         //리지드바디를 컨트롤할 때는 FixedUpdate에서 실행.
-        move(h, v);
-        turn(h, v);
+        Move();
+        Turn();
     }
 
-    void move(float h, float v)
+    void Move()
     {
         movement.Set(h, 0, v);
         movement = movement.normalized * speed * Time.deltaTime;
@@ -32,7 +41,7 @@ public class BearController : MonoBehaviour {
         bearRigidbody.MovePosition(transform.position + movement);
     }
 
-    void turn(float h, float v)
+    void Turn()
     {
         //원점으로 돌아가는 것 방지.
         if (h == 0 && v == 0)
@@ -43,5 +52,17 @@ public class BearController : MonoBehaviour {
         Quaternion newRotation = Quaternion.LookRotation(movement);
 
         bearRigidbody.rotation = Quaternion.Slerp(bearRigidbody.rotation, newRotation, rotateSpeed * Time.deltaTime);
+    }
+
+    void AnimationUpdate()
+    {
+        if (h == 0 && v == 0)
+        {
+            animator.SetBool("isWalking", false);
+        }
+        else
+        {
+            animator.SetBool("isWalking", true);
+        }
     }
 }
