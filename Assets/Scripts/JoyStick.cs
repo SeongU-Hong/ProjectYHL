@@ -13,9 +13,12 @@ public class JoyStick : MonoBehaviour {
     private Vector3 stickVector;    //조이스틱 벡터
     private float radius;   //조이스틱 배경의 반지름
     private bool moveFlag;
+    private Animator animator;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start ()
+    {
+        animator = player.GetComponent<Animator>();
         radius = GetComponent<RectTransform>().sizeDelta.y * 0.5f;
         stickFirstPosition = stick.transform.position;
 
@@ -24,13 +27,19 @@ public class JoyStick : MonoBehaviour {
         radius *= Can;
 
         moveFlag = false;
+        animator.SetBool("isWalking", false);
     }
 
     void Update()
     {
+
         if (moveFlag)
         {
             player.transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
         }
     }
 
@@ -59,6 +68,7 @@ public class JoyStick : MonoBehaviour {
         player.transform.eulerAngles = playerVector;
 
         moveFlag = true;
+
     }
 
     // 드래그 끝.
@@ -68,5 +78,6 @@ public class JoyStick : MonoBehaviour {
         stickVector = Vector3.zero;          // 방향을 0으로.
 
         moveFlag = false;
+        animator.SetBool("isWalking", false);
     }
 }
