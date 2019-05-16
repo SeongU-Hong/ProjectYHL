@@ -32,14 +32,10 @@ public class JoyStick : MonoBehaviour {
 
     void Update()
     {
-
         if (moveFlag)
         {
             player.transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
             animator.SetBool("isWalking", true);
-        }
-        else
-        {
         }
     }
 

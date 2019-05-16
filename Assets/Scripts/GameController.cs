@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public Transform[] points;
 
     public List<GameObject> monsterPool = new List<GameObject>();
-    public int maxPool = 4;
+    public int maxPool = 8;
 
 
     public bool isGameOver = false;
@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour {
 
         points = GameObject.Find("SpawnPoints")
             .GetComponentsInChildren<Transform>();
+        StartCoroutine(CreateMonster());
+
 
         for(int i = 0; i < maxPool; i++)
         {
@@ -39,8 +41,17 @@ public class GameController : MonoBehaviour {
             yield return new WaitForSeconds(createTime);
 
             int idx = Random.Range(1, points.Length);
-            GameObject _monster = Instantiate(monster);
-            _monster.transform.position = points[idx].position;
+
+            foreach(GameObject _monster in monsterPool)
+            {
+                if(_monster.activeSelf == false)
+                {
+                    _monster.transform.position
+                        = points[idx].position;
+                    _monster.SetActive(true);
+                    break;
+                }
+            }
 
 
         }

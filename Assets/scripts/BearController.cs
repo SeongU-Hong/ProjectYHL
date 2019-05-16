@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class BearController : MonoBehaviour {
 
-    public float speed=4f;
-    public float rotateSpeed=4f;
+    [SerializeField]
+    private float speed = 4f;
+    [SerializeField]
+    private float rotateSpeed = 4f;
+
     Rigidbody bearRigidbody;
     Animator animator;
+
     private Vector3 movement;
     private float h;
     private float v;
 
-    private void Awake()
+
+    private void Start()
     {
         bearRigidbody = GetComponent<Rigidbody>();
-        animator = GetComponent < Animator >();
+        animator = GetComponent <Animator>();
+
     }
 
     private void Update()
