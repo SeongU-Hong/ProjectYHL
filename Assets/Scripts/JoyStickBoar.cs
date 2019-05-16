@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class JoyStick : MonoBehaviour {
+public class JoyStickBoar : MonoBehaviour
+{
 
     public GameObject player;
     public GameObject stick; //조이스틱
@@ -14,9 +15,11 @@ public class JoyStick : MonoBehaviour {
     private float radius;   //조이스틱 배경의 반지름
     private bool moveFlag;
     private Animator animator;
+    public static Vector3 boarVector;//방향
+
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         animator = player.GetComponent<Animator>();
         radius = GetComponent<RectTransform>().sizeDelta.y * 0.5f;
@@ -37,9 +40,6 @@ public class JoyStick : MonoBehaviour {
         {
             player.transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);
             animator.SetBool("isWalking", true);
-        }
-        else
-        {
         }
     }
 
@@ -63,9 +63,10 @@ public class JoyStick : MonoBehaviour {
             stick.transform.position = stickFirstPosition + stickVector * radius;
 
         //조이스틱의 y값을 벡터로 변환
-        Vector3 playerVector = new Vector3(0, Mathf.Atan2(stickVector.x, stickVector.y) * Mathf.Rad2Deg, 0);
+        boarVector = new Vector3(0, Mathf.Atan2(stickVector.x, stickVector.y) * Mathf.Rad2Deg, 0);
 
-        player.transform.eulerAngles = playerVector;
+        player.transform.eulerAngles = boarVector;
+        //player.transform.eulerAngles = new Vector3(0, 10, 0);
 
         moveFlag = true;
 

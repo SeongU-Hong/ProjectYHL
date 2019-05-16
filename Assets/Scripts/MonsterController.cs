@@ -20,6 +20,7 @@ public class MonsterController : MonoBehaviour
     Transform playerTr;
     Transform monsterTr;
     Animator anime;
+    public float nBackSpeed;
 
     //늑대 공격 데미지
     public int wolf_damage = 25;
@@ -60,16 +61,17 @@ public class MonsterController : MonoBehaviour
     //butaAtk(돼지 공격)
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "bearAtk"
-            || collision.gameObject.tag == "butaAtk")
-        {
-            anime.SetTrigger("hit");
-        }
 
         //몬스터 사망 처리
         if (wolf_HP <= 0)
         {
             MonsterDie();
+        }
+
+        if (collision.gameObject.tag == "bear_hand")
+        {
+            Debug.Log("늑대맞음");
+            anime.SetTrigger("hit");
         }
     }
 

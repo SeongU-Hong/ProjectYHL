@@ -12,6 +12,7 @@ public class BearController : MonoBehaviour {
     private float h;
     private float v;
 
+
     private void Awake()
     {
         bearRigidbody = GetComponent<Rigidbody>();

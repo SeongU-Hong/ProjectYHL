@@ -85,12 +85,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AttackButton.cs" />
+    <Compile Include="Assets\Scripts\BearAttackButton.cs" />
     <Compile Include="Assets\Scripts\BearController.cs" />
-    <Compile Include="Assets\Scripts\JoyStick.cs" />
+    <Compile Include="Assets\Scripts\BoarAttackButton.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\JoyStickBear.cs" />
+    <Compile Include="Assets\Scripts\JoyStickBoar.cs" />
     <Compile Include="Assets\Scripts\MainCam.cs" />
     <Compile Include="Assets\Scripts\MonsterController.cs" />
     <Compile Include="Assets\Scripts\MonsterTest.cs" />
+    <Compile Include="Assets\Scripts\MyGizmos.cs" />
     <Compile Include="Assets\Scripts\pengController.cs" />
   </ItemGroup>
   <ItemGroup>
