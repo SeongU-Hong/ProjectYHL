@@ -33,7 +33,6 @@ public class JoyStickBear : MonoBehaviour {
 
     void Update()
     {
-
         if (moveFlag)
         {
             player.transform.Translate(Vector3.forward * Time.deltaTime * playerSpeed);

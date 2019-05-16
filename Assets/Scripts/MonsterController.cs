@@ -15,6 +15,9 @@ public enum State
 
 public class MonsterController : MonoBehaviour
 {
+    
+    public Rigidbody rigid;
+
 
     NavMeshAgent nvAgent;
     Transform playerTr;
@@ -36,25 +39,21 @@ public class MonsterController : MonoBehaviour
 
 
 
-
-    // Use this for initialization
-    void Start()
-    {
-        nvAgent = GetComponent<NavMeshAgent>();
-        monsterTr = GetComponent<Transform>();
-        playerTr = GameObject.FindGameObjectWithTag("penguin").transform;
-        anime = GetComponent<Animator>();
-
-        StartCoroutine(CheckMonsterState());
-        StartCoroutine(MonsterAction());
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        //nvAgent.SetDestination(playerTr.position);
+      
     }
+
+    void OnPlayerDie()
+    {
+        StopAllCoroutines();
+        nvAgent.Stop();
+        anime.SetTrigger("PlayerDie");
+    }
+
+
+  
 
     //몬스터가 공격 받을시 충돌처리
     //bearAtk(곰 공격)
@@ -81,6 +80,39 @@ public class MonsterController : MonoBehaviour
         nvAgent.Stop();
         anime.SetTrigger("die");
         GetComponent<CapsuleCollider>().enabled = false;
+        Invoke("ReturnPooling", 2.0f);
+    }
+
+    void ReturnPooling()
+    {
+        wolf_HP = 100;
+        state = State.idle;
+        GetComponent<CapsuleCollider>().enabled = true;
+        gameObject.SetActive(false);
+
+
+    }
+
+    void Awake()
+    {
+        nvAgent = GetComponent<NavMeshAgent>();
+        monsterTr = GetComponent<Transform>();
+        playerTr = GameObject.FindGameObjectWithTag("penguin").transform;
+        anime = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody>();
+
+
+    }
+    private void OnEnable()
+    {
+        StartCoroutine(CheckMonsterState());
+        StartCoroutine(MonsterAction());
+        pengController.OnPlayerDie += this.OnPlayerDie;
+    }
+
+    private void OnDisable()
+    {
+        pengController.OnPlayerDie -= this.OnPlayerDie;
     }
 
 

@@ -14,8 +14,11 @@ public enum Peng_State
 
 
 public class pengController : MonoBehaviour {
+    public delegate void PlayerDieHandler();
+    public static event PlayerDieHandler OnPlayerDie;
+
+
     NavMeshAgent agent;
-    Transform endTr;
     Vector3 endPosition;
     Animator anime;
 
@@ -31,7 +34,6 @@ public class pengController : MonoBehaviour {
         agent = GetComponent<NavMeshAgent>();
         endPosition = new Vector3(81, 3, 27);
 
-        endTr = this.gameObject.transform;
 	}
 	
 	// Update is called once per frame
@@ -40,11 +42,12 @@ public class pengController : MonoBehaviour {
 
 	}
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "wolf_atk")
         {
             agent.Stop();
+            anime.SetTrigger("hit");
             Debug.Log("울프 어택");
             Debug.Log("체력 : " + peng_HP);
             peng_HP -= 25;
@@ -58,6 +61,8 @@ public class pengController : MonoBehaviour {
         //펭귄 사망
         if (peng_HP <= 0)
         {
+            OnPlayerDie();
+
             Debug.Log("펭귄 사망");
             agent.Stop();
             anime.SetTrigger("die");
@@ -74,4 +79,6 @@ public class pengController : MonoBehaviour {
         check = true;
         agent.Resume();
     }
+
+
 }
